@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900')
+// Animations
+@keyframes rotate
+	from
+		transform rotate(0deg)
+	to
+		transform rotate(360deg)
+@keyframes blink
+	50%
+		opacity 0
+	100%
+		opacity 1
+.rotate
+	animation-name rotate
+	animation-duration 50s
+	animation-iteration-count infinite
+	animation-timing-function linear
+//
+body
+	margin 0
+	font-family 'Source Sans Pro'
+.menu
+	top 0 !important
+	background rgba(255, 255, 255, .85)
+	z-index 999
+	width 100%
+	height 60px
+	position fixed
+	display flex
+	justify-content space-between
+	align-items center
+	white-space nowrap
+	&__logo
+		height 100%
+		display flex
+		padding 0 30px
+		align-items center
+		justify-content center
+		color #777
+		box-sizing border-box
+		p
+			cursor pointer
+			transition all .06s
+			&:hover
+				color #222
+	&__buttons
+		position relative
+		display flex
+		align-items center
+		height 100%
+	&__button
+		min-width 160px
+		height 100%
+		box-sizing border-box
+		padding 10px 30px
+		color #777
+		cursor pointer
+		display flex
+		justify-content center
+		align-items center
+		transition all .12s
+		&:after,&:before
+			content ''
+			display block
+			position absolute
+			margin 3px
+			border-bottom 2px solid #444
+			width 0
+			bottom 8px
+			transition all .12s
+		&:hover
+			color #222
+			&:after,&:before
+				width 50px
+.heading
+	height 500px
+	margin-top 60px
+	position relative
+	width 100%
+	box-sizing border-box
+	padding 100px 40px
+	background #f3f3f3
+	display flex
+	justify-content center
+	overflow hidden
+	&__square
+		position absolute
+		width 100px
+		height 100px
+		border 13px dashed #00d7ff
+		bottom 40%
+		filter blur(4px)
+		&:nth-child(1)
+			bottom -25px
+			left -25px
+			border-color #ad54ff
+		&:nth-child(2)
+			width 200px
+			height 200px
+			right -5px
+			top 20px
+			animation-duration 95s
+			border-color #2de62b
+		&:nth-child(3)
+			width 230px
+			height 230px
+			left 12px
+			top 34px
+			border-color #ff4d4d
+			animation-duration 145s
+		&:nth-child(4)
+			right 22px
+			bottom -4px
+			border-color cornflowerblue
+		&:nth-child(5)
+			left 0
+			right 0
+			margin 0 auto
+	&__profile
+		position absolute
+		margin 0 auto
+		top -110px
+		left 0
+		right 0
+		width 180px
+		height 180px
+		border-radius 100%
+		background-image url('https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/26230556_1686468704707988_8072345125610695221_n.jpg?oh=dfa27f39568448403a24d6ceb562bc04&oe=5B18C0F6')
+		background-size cover
+	&__about
+		display block
+		position absolute
+		margin 0 auto
+		width 80%
+		max-width 910px
+		left 0
+		right 0
+		z-index 2
+		padding 70px 45px
+		border 5px dashed #aaa
+		text-align center
+		bottom 50px
+		color #222
+		h1
+			font-weight 900
+			font-size 2.2em
+			position relative
+			color #333
+			&:after
+				content ''
+				top 8px
+				display inline-block
+				position absolute
+				height 34px
+				width 6px
+				background #333
+				animation blink 1s linear infinite alternate
+		p
+			font-size 1.2em
+			font-weight 100
+.intro
+	margin 0 auto
+	max-width 1100px
+	display grid
+	grid-template 1fr / 1fr 1fr
+	p
+		font-size 1.2em
+		color #555
+		font-weight 100
+	&__slot
+		width 100%
+		box-sizing border-box
+		padding 90px 30px
+	&__title
+		margin 7px
+		text-align left
+		font-size 1.3em
+		&:after
+			content ''
+			display block
+			width 43px
+			border-bottom 2px solid #222
+.portfolio
+	width 100%
+	background #222
+	color white
+	box-sizing border-box
+	padding 40px 10px
+	&__title
+		margin 7px
+		text-align center
+		font-size 2em
+		font-weight 700
+		&:after
+			content ''
+			display block
+			margin 7px auto
+			width 320px
+			height 5px
+			background linear-gradient(90deg,#ff4d4d 0%, #ff4d4d 25%, #00d7ff 25%, #00d7ff 50%,#2de62b 50%, #2de62b 75%, #ad54ff 75%, #ad54ff 100%)
+	&__projects
+		max-width 1300px
+		margin 40px auto
+		display grid
+		grid-template 1fr 1fr / 1fr 1fr
+		padding 12px
+		box-sizing border-box
+		grid-gap 30px
+		width 100%
+.project
+	padding 13px 50px
+	border 5px dashed #ff4d4d
+	color #ff4d4d
+	display flex
+	flex-direction column
+	align-items center
+	justify-content center
+	cursor pointer
+	transition all .12s
+	&:nth-child(n)
+		border-color #ff4d4d
+		color #ff4d4d	
+	&:nth-child(2n)
+		border-color #00d7ff
+		color #00d7ff
+	&:nth-child(3n)
+		border-color #2de62b
+		color #2de62b
+	&:nth-child(4n)
+		border-color #ad54ff
+		color #ad54ff
+	&:hover
+		opacity .6
+	&__title
+		font-size 1.3em
+		font-weight 900
+	&__description
+		text-align center
+		font-weight 100b 
