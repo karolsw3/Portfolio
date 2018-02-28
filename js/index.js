@@ -12,8 +12,8 @@ var app = new Vue({
 
 var slogans = [
   'Minimalistic and affordable websites',
-  'Responsive and ergonomic',
-  'Creative and succesful'
+  'Simple and useful web apps',
+  'Creative and artful workflow'
 ]
 var actualSlogan = 0
 var speed = 30
