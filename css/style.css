@@ -113,6 +113,7 @@ body {
   top: 34px;
   border-color: #ff4d4d;
   animation-duration: 145s;
+  animation-direction: reverse;
 }
 .heading__square:nth-child(4) {
   right: 22px;
