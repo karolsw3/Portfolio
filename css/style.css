@@ -281,6 +281,12 @@ body {
   .portfolio__projects {
     grid-template: 1fr/1fr;
   }
+  .intro {
+    grid-template: 1fr/1fr;
+  }
+  .intro__slot {
+    padding: 52px 30px;
+  }
   .heading__about h1 {
     font-size: 1.8em;
   }
