@@ -266,7 +266,7 @@ body {
 }
 .project__description {
   text-align: center;
-  font-weight: 100b;
+  font-weight: 100;
 }
 @-moz-keyframes rotate {
   from {
