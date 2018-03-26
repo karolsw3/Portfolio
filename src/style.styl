@@ -151,7 +151,7 @@ body
 			border-bottom 2px solid #222
 .portfolio
 	width 100%
-	background #222
+	background linear-gradient(to right, #05a9a6, #054780)
 	color white
 	box-sizing border-box
 	padding 40px 10px
@@ -165,41 +165,30 @@ body
 			display block
 			margin 7px auto
 			width 320px
-			height 5px
-			background linear-gradient(90deg,#ff4d4d 0%, #ff4d4d 25%, #00d7ff 25%, #00d7ff 50%,#2de62b 50%, #2de62b 75%, #ad54ff 75%, #ad54ff 100%)
+			height 2px
+			background white
 	&__projects
 		max-width 1300px
 		margin 40px auto
 		display grid
 		grid-template 1fr 1fr / 1fr 1fr
-		padding 12px
+		padding 15px
 		box-sizing border-box
-		grid-gap 30px
+		grid-gap 15px
 		width 100%
 .project
 	padding 13px 50px
-	border 5px dashed #ff4d4d
-	color #ff4d4d
+	box-shadow 0 0 16px rgba(0, 0, 0, 0.3)
+	background white
+	color #333
 	display flex
 	flex-direction column
 	align-items center
 	justify-content center
 	cursor pointer
 	transition all .12s
-	&:nth-child(n)
-		border-color #ff4d4d
-		color #ff4d4d	
-	&:nth-child(2n)
-		border-color #00d7ff
-		color #00d7ff
-	&:nth-child(3n)
-		border-color #2de62b
-		color #2de62b
-	&:nth-child(4n)
-		border-color #ad54ff
-		color #ad54ff
 	&:hover
-		opacity .6
+		opacity .9
 	&__title
 		font-size 1.3em
 		font-weight 900
