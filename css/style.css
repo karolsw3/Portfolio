@@ -200,6 +200,7 @@ body {
   box-shadow: 0 0 16px rgba(0,0,0,0.3);
   background: #fff;
   color: #333;
+  min-height: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -225,9 +226,13 @@ body {
   .heading {
     margin-top: 0;
     height: 600px;
+    padding: 60px;
   }
 }
 @media screen and (max-width: 660px) {
+  .project {
+    padding: 10px;
+  }
   .portfolio__projects {
     grid-template: 1fr/1fr;
   }
@@ -236,6 +241,9 @@ body {
   }
   .intro__slot {
     padding: 52px 30px;
+  }
+  .heading {
+    padding: 20px;
   }
   .heading__about h1 {
     font-size: 1.8em;
