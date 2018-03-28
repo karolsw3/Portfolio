@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900");
+.float {
+  animation-name: float;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
 .rotate {
   animation-name: rotate;
   animation-duration: 50s;
@@ -78,7 +83,7 @@ body {
   width: 100%;
   margin-top: 60px;
   box-sizing: border-box;
-  padding: 100px 40px;
+  padding: 115px 40px;
   background-image: url("../images/background.svg");
   background-size: cover;
   display: flex;
@@ -170,6 +175,13 @@ body {
   color: #fff;
   box-sizing: border-box;
   padding: 40px 10px;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__background {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 .portfolio__title {
   margin: 7px;
@@ -207,6 +219,7 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: all 0.12s;
+  z-index: 2;
 }
 .project:hover {
   opacity: 0.9;
@@ -314,5 +327,49 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@-moz-keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-o-keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

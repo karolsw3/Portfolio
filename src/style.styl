@@ -10,6 +10,17 @@
 		opacity 0
 	100%
 		opacity 1
+@keyframes float
+	0%
+		transform translateY(0)
+	50%
+		transform translateY(-80px)
+	100%
+		transform translateY(0px)
+.float
+	animation-name float
+	animation-duration 15s
+	animation-iteration-count infinite
 .rotate
 	animation-name rotate
 	animation-duration 50s
@@ -157,6 +168,12 @@ body
 	color white
 	box-sizing border-box
 	padding 40px 10px
+	position relative
+	overflow hidden
+	&__background
+		position absolute
+		right 20px
+		top 20px
 	&__title
 		margin 7px
 		text-align center
@@ -190,6 +207,7 @@ body
 	justify-content center
 	cursor pointer
 	transition all .12s
+	z-index 2
 	&:hover
 		opacity .9
 	&__title

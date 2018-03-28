@@ -15,7 +15,7 @@ html
 				.menu__button Offer
 				.menu__button Contact
 		.heading
-			.heading__stack
+			.heading__stack.float
 				img(src='images/stack.svg' height='700px')
 			.heading__about
 				h1 Karol Świerczek
@@ -28,6 +28,8 @@ html
 				.intro__title My workflow
 				p Every single website which I've made is unique because I'm not using any templates and ready-made patterns. I'm constantly developing my skills because I want to deliver the highest quality product to the customer.
 		.portfolio
+			.portfolio__background
+				img(src='images/background2.svg')
 			.portfolio__title My portfolio
 			#projects.portfolio__projects
 				.project(v-for='project in projects')
