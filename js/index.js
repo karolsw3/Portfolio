@@ -2,11 +2,11 @@ var app = new Vue({
   el: '#projects',
   data: {
     projects: [
-      {title: 'Gradientify.js', description: 'A simple javascript library for creating animated gradient backgrounds'},
-      {title: 'Cookieclicker', description: 'Cookieclicker game written in ES6'},
-      {title: 'Lakiery.hybrydowe.eu', description: 'A website which showcases products in a user-friendly style'},
-      {title: 'My portfolio', description: 'This portfolio website has been written using Vue.js and Vanilla javascript'},
-      {title: '55+ Pens on codepen.io', description: 'Every now and then I am making a simple sketches of websites and applications. I have made about 55 various projects of this type'}
+      {title: 'Gradientify.js', about: 'Javascript library for creating animated gradient backgrounds', annotation: 'Pure JS', image: './images/projects/gradientify.png', url: 'https://karolsw2.github.io/gradientify.js/'},
+      {title: 'Cookieclicker', about: 'Cookieclicker game written in ES6', annotation: 'Node.js', image: './images/projects/cookieclicker.png', url: 'https://github.com/karolsw2/Cookieclicker'},
+      {title: 'Lakiery.hybrydowe.eu', about: 'A website for cosmetics seller', annotation: 'HTML & CSS', image: './images/projects/lakiery.png', url: 'http://lakiery.hybrydowe.eu/'},
+      {title: 'This portfolio', about: 'The page you are currently browsing', annotation: 'Vue.js', image: './images/projects/portfolio.png', url: ''},
+      {title: '65+ Pens on codepen.io', about: 'My front-end portfolio of website sketches', annotation: 'Various', image: './images/projects/codepen.png', url: 'https://codepen.io/karolsw2/'}
     ]
   }
 })

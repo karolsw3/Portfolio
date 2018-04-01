@@ -33,7 +33,11 @@ html
 			.portfolio__title My portfolio
 			#projects.portfolio__projects
 				.project(v-for='project in projects')
-					.project__title {{project.title}}
-					.project__description {{project.description}}
+					.project__desc
+						a.project__photo(target='_blank' :href='project.url')
+							img(:src='project.image')
+						.project__title {{project.title}}
+						.project__about {{project.about}}
+						.project__annotation {{project.annotation}}
 			script(src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js')
 			script(src='js/index.js')
