@@ -34,9 +34,9 @@ html
 			#projects.portfolio__projects
 				.project(v-for='project in projects')
 					.project__desc
-						a.project__photo(target='_blank' :href='project.url')
+						.project__photo
 							img(:src='project.image')
-						.project__title {{project.title}}
+						a.project__title(target='_blank' :href='project.url') {{project.title}}
 						.project__about {{project.about}}
 						.project__annotation {{project.annotation}}
 			script(src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js')

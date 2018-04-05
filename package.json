@@ -16,6 +16,9 @@
   "author": "Karol Świerczek",
   "license": "ISC",
   "dependencies": {
-    "gulp-debug": "^3.2.0"
+    "gulp": "^3.9.1",
+    "gulp-debug": "^3.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.7.0"
   }
 }

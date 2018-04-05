@@ -14,6 +14,10 @@ body {
   margin: 0;
   font-family: 'Source Sans Pro';
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .menu {
   top: 0 !important;
   background: rgba(255,255,255,0.85);
@@ -215,7 +219,7 @@ body {
 }
 .project__photo {
   width: 90%;
-  box-shadow: 0 0 16px rgba(0,0,0,0.2);
+  box-shadow: 0 0 16px rgba(0,0,0,0.36);
   background: #fff;
   position: absolute;
   margin: 0 auto;
@@ -224,12 +228,12 @@ body {
   left: 0;
   right: 0;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2;
-  transition-duration: 0.16s;
+  transition-duration: 0.26s;
 }
 .project__photo img {
   width: 100%;
@@ -243,7 +247,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #fff;
+  background: rgba(255,255,255,0.953);
   min-height: 82px;
   padding: 18px;
 }
@@ -251,6 +255,10 @@ body {
   color: rgba(0,0,0,0.8);
   font-size: 1.5em;
   font-weight: 700;
+  transition-duration: 0.2s;
+}
+.project__title:hover {
+  opacity: 0.85;
 }
 .project__title:after {
   content: '';
