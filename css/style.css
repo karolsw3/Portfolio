@@ -120,10 +120,9 @@ a {
   max-width: 910px;
   z-index: 2;
   padding: 70px 45px;
-  border: 2px solid #fff;
   text-align: center;
   color: #fff;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.38);
 }
 .heading__about h1 {
   font-weight: 900;
@@ -134,7 +133,7 @@ a {
 .heading__about h1:after {
   content: '';
   top: 7px;
-  transform: translateX(4px);
+  transform: translateX(6px);
   display: inline-block;
   position: absolute;
   height: 33px;
@@ -160,7 +159,7 @@ a {
 .intro__slot {
   width: 100%;
   box-sizing: border-box;
-  padding: 90px 30px;
+  padding: 110px 30px;
 }
 .intro__title {
   margin: 7px;
@@ -178,7 +177,7 @@ a {
   background: linear-gradient(to right, #05a9a6, #054780);
   color: #fff;
   box-sizing: border-box;
-  padding: 40px 10px;
+  padding: 60px 10px;
   position: relative;
   overflow: hidden;
 }
