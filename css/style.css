@@ -218,7 +218,6 @@ a {
 }
 .project__photo {
   width: 90%;
-  box-shadow: 0 0 16px rgba(0,0,0,0.36);
   background: #fff;
   position: absolute;
   margin: 0 auto;
@@ -232,7 +231,7 @@ a {
   justify-content: center;
   align-items: center;
   z-index: 2;
-  transition-duration: 0.26s;
+  transition-duration: 0.46s;
 }
 .project__photo img {
   width: 100%;
