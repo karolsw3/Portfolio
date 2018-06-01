@@ -29,7 +29,7 @@ a {
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
-  transition-duration: 0.2s;
+  transition-duration: 0.4s;
   color: #777;
 }
 .menu--transparent {
@@ -104,9 +104,12 @@ a {
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  padding: 135px 40px;
+  padding: 145px 70px;
   background-image: url("../images/background.svg");
   background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-position-x: right;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -131,23 +134,50 @@ a {
   background-size: cover;
 }
 .heading__about {
+  position: relative;
   display: block;
   margin: 0 auto;
-  width: 80%;
-  max-width: 910px;
+  width: 100%;
   z-index: 2;
   padding: 70px 45px;
-  text-align: center;
   color: #fff;
-  background: rgba(0,0,0,0.38);
+  text-shadow: 0 0 56px rgba(0,0,0,0.6);
+  background: inherit;
+  overflow: hidden;
 }
-.heading__about h1 {
+.heading__about .heading__stack {
+  left: 122px;
+  top: -6px;
+  filter: blur(10px);
+  z-index: 2;
+}
+.heading__about:after {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: inherit;
+  left: -25px;
+  top: -25px;
+  bottom: 0;
+  right: 0;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.1);
+  filter: blur(10px);
+}
+.heading__content {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+.heading__content h1 {
   font-weight: 900;
   font-size: 2em;
   position: relative;
   color: #fff;
 }
-.heading__about h1:after {
+.heading__content h1:after {
   content: '';
   top: 7px;
   transform: translateX(6px);
@@ -158,7 +188,7 @@ a {
   background: #fff;
   animation: blink 1.23s linear infinite alternate;
 }
-.heading__about p {
+.heading__content p {
   font-size: 1.2em;
   font-weight: 100;
 }
@@ -307,8 +337,14 @@ a {
   }
   .heading {
     margin-top: 0;
-    height: 600px;
+    height: auto;
     padding: 60px;
+  }
+  .heading__about .heading__stack {
+    top: 70px !important;
+  }
+  .intro__slot {
+    padding: 110px 60px;
   }
 }
 @media screen and (max-width: 660px) {
