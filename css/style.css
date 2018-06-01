@@ -29,6 +29,26 @@ a {
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
+  transition-duration: 0.2s;
+  color: #777;
+}
+.menu--transparent {
+  background: transparent;
+  color: #fff;
+}
+.menu--transparent .menu__logo p {
+  color: #fff;
+}
+.menu--transparent .menu__logo p:hover {
+  color: #fff;
+  opacity: 0.9;
+}
+.menu--transparent .menu__button:after,
+.menu--transparent .menu__button:before {
+  border-bottom: 2px solid #fff;
+}
+.menu--transparent .menu__button:hover {
+  color: #fff;
 }
 .menu__logo {
   height: 100%;
@@ -36,7 +56,6 @@ a {
   padding: 0 30px;
   align-items: center;
   justify-content: center;
-  color: #777;
   box-sizing: border-box;
 }
 .menu__logo p {
@@ -57,7 +76,6 @@ a {
   height: 100%;
   box-sizing: border-box;
   padding: 10px 30px;
-  color: #777;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -85,9 +103,8 @@ a {
 .heading {
   position: relative;
   width: 100%;
-  margin-top: 60px;
   box-sizing: border-box;
-  padding: 115px 40px;
+  padding: 135px 40px;
   background-image: url("../images/background.svg");
   background-size: cover;
   display: flex;

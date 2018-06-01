@@ -1,3 +1,5 @@
+// Vue.js
+
 var app = new Vue({
   el: '#projects',
   data: {
@@ -8,5 +10,17 @@ var app = new Vue({
       {title: 'This portfolio', about: 'The page you are currently browsing', annotation: 'Vue.js', image: './images/projects/portfolio.png', url: ''},
       {title: '65+ Pens on codepen.io', about: 'My front-end portfolio of website sketches', annotation: 'Various', image: './images/projects/codepen.png', url: 'https://codepen.io/karolsw2/'}
     ]
+  }
+})
+
+// Vanilla js
+
+var menu = document.getElementsByClassName('menu')[0]
+
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 60) {
+    menu.classList.remove('menu--transparent')
+  } else {
+    menu.classList.add('menu--transparent')
   }
 })
