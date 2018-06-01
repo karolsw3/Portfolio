@@ -35,9 +35,9 @@ html
 				img(src='images/background2.svg')
 			.portfolio__title My portfolio
 			#projects.portfolio__projects
-				.project(v-for='project in projects')
+				.project(v-for='(project, index) in projects' :class="{ 'project--primary': index < 3 }")
 					.project__desc
-						.project__photo
+						.project__photo(v-if='index < 3')
 							img(:src='project.image')
 						a.project__title(target='_blank' :href='project.url') {{project.title}}
 						.project__about {{project.about}}
