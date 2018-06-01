@@ -263,32 +263,11 @@ a {
   height: 82px;
   margin: 0 auto;
 }
-.project--primary {
-  height: 410px;
+.project--primary .project__title {
+  color: #05a9a6;
 }
-.project__photo {
-  width: 90%;
-  background: #fff;
-  position: absolute;
-  margin: 0 auto;
-  top: -300px;
-  height: 309px;
-  left: 0;
-  right: 0;
-  box-sizing: border-box;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  transition-duration: 0.46s;
-}
-.project__photo img {
-  width: 100%;
-  height: 100%;
-}
-.project__photo:hover {
-  transform: translateY(5px);
+.project--primary .project__title:after {
+  border-bottom: 3px solid #05a9a6;
 }
 .project__desc {
   position: absolute;
