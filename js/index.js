@@ -20,9 +20,20 @@ var app = new Vue({
 var menu = document.getElementsByClassName('menu')[0]
 
 window.addEventListener('scroll', () => {
-  if (document.body.scrollTop > 60) {
+  var scroll = document.body.scrollTop
+
+  if (scroll > 60) {
     menu.classList.remove('menu--transparent')
   } else {
     menu.classList.add('menu--transparent')
   }
+
+  Array.from(document.getElementsByClassName('revealOnScroll')).forEach((element, index) => {
+    let rect = element.getBoundingClientRect()
+    if (scroll >= (rect.top + element.style.height + 30)) {
+      if (!element.classList.contains('revealAnimation')) {
+        element.classList.add('revealAnimation')
+      }
+    }
+  })
 })

@@ -1,31 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900')
-// Animations
-@keyframes rotate
-	from
-		transform rotate(0deg)
-	to
-		transform rotate(360deg)
-@keyframes blink
-	50%
-		opacity 0
-	100%
-		opacity 1
-@keyframes float
-	0%
-		transform translateY(0)
-	50%
-		transform translateY(-80px)
-	100%
-		transform translateY(0px)
-.float
-	animation-name float
-	animation-duration 15s
-	animation-iteration-count infinite
-.rotate
-	animation-name rotate
-	animation-duration 50s
-	animation-iteration-count infinite
-	animation-timing-function linear
+
 //
 body
 	margin 0
@@ -314,3 +288,49 @@ a
 			font-size 1.8em
 			&:after
 				display none
+
+// Animations
+@keyframes rotate
+	from
+		transform rotate(0deg)
+	to
+		transform rotate(360deg)
+@keyframes blink
+	50%
+		opacity 0
+	100%
+		opacity 1
+@keyframes float
+	0%
+		transform translateY(0)
+	50%
+		transform translateY(-80px)
+	100%
+		transform translateY(0px)
+.float
+	animation-name float
+	animation-duration 15s
+	animation-iteration-count infinite
+.rotate
+	animation-name rotate
+	animation-duration 50s
+	animation-iteration-count infinite
+	animation-timing-function linear
+
+.revealOnScroll
+	opacity 0
+
+.revealAnimation
+	animation-name reveal
+	animation-duration 2.5s
+	animation-iteration-count 1
+	animation-timing-function cubic-bezier(.83,-0.07,.28,1.25)
+	animation-fill-mode forwards
+
+@keyframes reveal
+	0%
+		opacity 0
+		transform scale(0.5, 0.5)
+	100%
+		opacity 1
+		transform scale(1, 1)

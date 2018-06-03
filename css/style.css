@@ -1,15 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900");
-.float {
-  animation-name: float;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-}
-.rotate {
-  animation-name: rotate;
-  animation-duration: 50s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
 body {
   margin: 0;
   font-family: 'Source Sans Pro';
@@ -353,6 +342,27 @@ a {
     display: none;
   }
 }
+.float {
+  animation-name: float;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+.rotate {
+  animation-name: rotate;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.revealOnScroll {
+  opacity: 0;
+}
+.revealAnimation {
+  animation-name: reveal;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.83, -0.07, 0.28, 1.25);
+  animation-fill-mode: forwards;
+}
 @-moz-keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -459,5 +469,45 @@ a {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+@-moz-keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@-o-keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
   }
 }
