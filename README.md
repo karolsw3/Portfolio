@@ -1,4 +1,2 @@
-# portfolio
-My portfolio website made using Vue.js, html and css preprocessors and vanilla javascript.
-
-https://karolsw2.github.io/portfolio/
+# [portfolio](https://karolsw2.github.io/Portfolio)
+My portfolio website made using Vue.js, HTML and CSS preprocessors, and vanilla JavaScript.
