@@ -135,23 +135,29 @@ a {
   overflow: hidden;
 }
 .heading__about .heading__stack {
-  left: 122px;
+  left: 129px;
   top: -6px;
-  filter: blur(10px);
+  filter: blur(11px);
+  transition-duration: 1s;
   z-index: 2;
 }
 .heading__about:after {
   content: '';
   position: absolute;
-  width: 120%;
-  height: 120%;
+  width: 100%;
+  height: 100%;
   background: inherit;
-  left: -25px;
-  top: -25px;
+  left: 0;
+  top: 0;
   bottom: 0;
   right: 0;
-  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 60px rgba(255,255,255,0.4);
   filter: blur(10px);
+  transition-duration: 1s;
+}
+.heading__about:hover:after,
+.heading__about:hover .heading__stack {
+  filter: blur(0px);
 }
 .heading__content {
   margin: 0 auto;
