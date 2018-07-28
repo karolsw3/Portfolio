@@ -5,7 +5,7 @@ var app = new Vue({
   data: {
     projects: [
       {title: 'Sudoku', about: 'A modern, API-based sudoku web app', annotation: 'Node.js', url: 'https://github.com/Galactim/Sudoku'},
-      {title: 'Detektyw24.eu', about: 'A website for a detective company', annotation: 'HTML & CSS', url: 'http://detektyw24.eu/en.html'},
+      {title: 'Detektyw24.eu', about: 'A website for a detective company', annotation: 'HTML & CSS', url: 'https://detektyw24.eu/en.html'},
       {title: 'Lakiery.hybrydowe.eu', about: 'A website for cosmetics seller', annotation: 'HTML & CSS', url: 'http://lakiery.hybrydowe.eu/'},
       {title: 'Gradientify.js', about: 'Javascript library for creating animated gradient backgrounds', annotation: 'Pure JS', url: 'https://karolsw3.github.io/gradientify.js/'},
       {title: 'NOVA-Transport', about: 'A webiste for a transport company', annotation: 'HTML & CSS', url: 'https://karolsw3.github.io/NOVA-Transport/'},
