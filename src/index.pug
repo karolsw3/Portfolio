@@ -8,13 +8,13 @@ html
 		.menu.menu--transparent
 			.menu__logo
 				p Karol Świerczek
-			.menu__buttons
+			nav.menu__buttons
 				.menu__button Home
 				.menu__button About me
 				.menu__button My portfolio
 				.menu__button Offer
 				.menu__button Contact
-		.heading
+		section.heading
 			.heading__stack.float
 				img(src='images/stack.svg' height='700px')
 			.heading__about
@@ -23,14 +23,14 @@ html
 				.heading__content
 					h1 Karol Świerczek
 					p I'm an 18 year old web developer from Poland, and programming and creative ideas are my biggest passions. I love to transform whatever crazy thoughts spring into my mind into more and more intriguing projects.
-		.intro
+		section.intro
 			.intro__slot.revealOnScroll
 				.intro__title About me
 				p I've been programming since I was twelve, but I've been putting all my effort into it for the last year. Every single day I'm learning how to create better and more advanced projects and so I'm determined to improve and learn from my mistakes.
 			.intro__slot.revealOnScroll
 				.intro__title My workflow
 				p A day without coding is a day lost (just look on my github contribution graph). If I'm not coding that means that I'm probably studying or (sometimes) sleeping. In my spare time I also like to read books, though.
-		.portfolio
+		section.portfolio
 			.portfolio__background.float
 				img(src='images/background2.svg')
 			.portfolio__title My portfolio
@@ -42,7 +42,15 @@ html
 						a.project__title(target='_blank' :href='project.url') {{project.title}}
 						.project__about {{project.about}}
 						.project__annotation {{project.annotation}}
-		.footer Icons, background and the whole website made with ❤ by Karol Świerczek
+		section.offer
+			.offer__title Offer
+			.offer__header I'm currently not available to hire due to school, but I can work remotely on some types of projects.
+			.offer__offers
+				.offerBox
+					.offerBox__title One-page website
+					.offerBox__description I'm especially experienced in making one-page websites. I can make few design concepts and if my client accepts one of them - I'm coding it. My websites are perfected to the smallest detail. They work on all devices and I'm making them as beautyful as I can.
+					.offerBox__button Order
+		footer.footer Icons, background and the whole website made with ❤ by Karol Świerczek
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js')
 		script(src='js/index.js')
 

@@ -262,7 +262,81 @@ a
 		font-style italic
 		font-size 0.92em
 		color rgba(0, 0, 0, .3)
-
+.offer
+	width 100%
+	color #222
+	background-color white
+	box-sizing border-box
+	padding 60px 10px
+	position relative
+	overflow hidden
+	&__title
+		margin 7px
+		text-align center
+		font-size 2em
+		font-weight 700
+		&:after
+			content ''
+			display block
+			margin 7px auto
+			width 320px
+			height 2px
+			background #222
+	&__header
+		margin 25px auto
+		padding 20px
+		max-width 350px
+		box-shadow 0 0 32px rgba(0, 0, 0, .2)
+		color #555
+	&__offers
+		display flex
+		justify-content space-around
+		align-items center
+.offerBox
+	position relative
+	width 350px
+	height 400px
+	padding 20px
+	text-align center
+	margin 0 auto
+	color white
+	background linear-gradient(to right, #05a9a6, #046681)
+	box-shadow 0 0 32px rgba(0, 0, 0, .2)
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+	&__title
+		margin 7px
+		text-align center
+		font-size 1.5em
+		font-weight 700
+	&__description
+		margin 7px
+		text-align center
+		font-size 1em
+		font-weight 100
+	&__button
+		position absolute
+		padding 10px
+		font-size 1.3em
+		font-weight 900
+		margin 0 auto
+		left 0
+		right 0
+		bottom 20px
+		width 200px
+		background white
+		border 2px solid #057792
+		color #057792
+		transition-duration .2s
+		cursor pointer
+		text-align center
+		box-shadow 0 0 32px rgba(0, 0, 0, .2)
+		&:hover
+			background transparent
+			color white
+			border 2px solid white 
 .footer
 	width 100%
 	box-sizing border-box
