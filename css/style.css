@@ -348,13 +348,18 @@ a {
   text-align: center;
   margin: 0 auto;
   color: #fff;
-  background: linear-gradient(to right, #05a9a6, #046681);
   box-shadow: 0 0 32px rgba(0,0,0,0.2);
   text-shadow: 0 0 32px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.offerBox:nth-child(1) {
+  background: linear-gradient(to right, #05a9a6, #046681);
+}
+.offerBox:nth-child(2) {
+  background: linear-gradient(to right, #834faf, #ff42e5);
 }
 .offerBox__background {
   position: absolute;
@@ -366,6 +371,9 @@ a {
   background: url("../images/pattern.png");
   background-size: 90px;
   z-index: 1;
+}
+.offerBox__background--second {
+  background: url("../images/pattern2.png");
 }
 .offerBox__title {
   margin: 7px;
@@ -398,6 +406,11 @@ a {
   cursor: pointer;
   text-align: center;
   box-shadow: 0 0 32px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+.offerBox__button--second {
+  color: #bd49c8;
+  border-color: #bd49c8;
 }
 .offerBox__button:hover {
   background: transparent;
