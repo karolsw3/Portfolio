@@ -377,7 +377,54 @@ a
 	background #222
 	color #eee
 	text-align center
-
+.contact
+	width 100%
+	color white
+	background linear-gradient(to right, #05a9a6, #054780)
+	box-sizing border-box
+	padding 120px 0
+	position relative
+	overflow hidden
+	&__form
+		margin 0 auto
+		display flex
+		flex-direction column
+		align-items center
+		justify-content space-between
+	&__input
+		width 90%
+		max-width 500px
+		border none
+		margin 10px
+		padding 15px 22px
+		background white
+		box-shadow 0 0 32px rgba(0, 0, 0, .2)
+		color #222
+		font-size 1.2em
+		text-align left
+	textarea
+		min-height 300px
+	&__button
+		padding 10px
+		font-size 1.3em
+		font-weight 900
+		margin 10px auto
+		left 0
+		right 0
+		bottom 20px
+		width 200px
+		background white
+		border 2px solid #057792
+		color #057792
+		transition-duration .2s
+		cursor pointer
+		text-align center
+		box-shadow 0 0 32px rgba(0, 0, 0, .2)
+		z-index 2
+		&:hover
+			background transparent
+			color white
+			border 2px solid white
 @media screen and (max-width: 960px)
 	.portfolio__projects
 		grid-template 1fr / 1fr 1fr
