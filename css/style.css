@@ -346,7 +346,7 @@ a {
   height: 520px;
   padding: 25px;
   text-align: center;
-  margin: 0 auto;
+  margin: 15px auto;
   color: #fff;
   box-shadow: 0 0 32px rgba(0,0,0,0.2);
   text-shadow: 0 0 32px rgba(0,0,0,0.2);
@@ -393,7 +393,7 @@ a {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 80px;
+  bottom: 110px;
   margin: 0 auto;
   padding: 10px;
   border: 2px solid #fff;
@@ -478,6 +478,9 @@ a {
   }
   .heading__about h1:after {
     display: none;
+  }
+  .offer__offers {
+    flex-direction: column;
   }
 }
 .float {
