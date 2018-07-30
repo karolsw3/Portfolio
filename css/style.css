@@ -219,7 +219,7 @@ a {
   background: linear-gradient(to right, #05a9a6, #054780);
   color: #fff;
   box-sizing: border-box;
-  padding: 60px 10px;
+  padding: 145px 10px;
   position: relative;
   overflow: hidden;
 }
@@ -310,7 +310,7 @@ a {
   color: #222;
   background-color: #fff;
   box-sizing: border-box;
-  padding: 60px 10px;
+  padding: 145px 10px;
   position: relative;
   overflow: hidden;
 }
@@ -329,7 +329,7 @@ a {
   background: #222;
 }
 .offer__header {
-  margin: 25px auto;
+  margin: 45px auto 35px auto;
   padding: 20px;
   max-width: 350px;
   box-shadow: 0 0 32px rgba(0,0,0,0.2);
@@ -442,7 +442,7 @@ a {
   color: #fff;
   background: linear-gradient(to left, #05a9a6, #054780);
   box-sizing: border-box;
-  padding: 350px 0 30px 0;
+  padding: 350px 0 145px 0;
   position: relative;
   overflow: hidden;
 }
