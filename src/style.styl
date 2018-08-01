@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900')
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:900')
 
 //
 body
@@ -146,12 +147,13 @@ a
 		z-index 3
 		h1
 			font-weight 900
+			font-family 'Maven Pro'
 			font-size 2em
 			position relative
 			color #fff
 			&:after
 				content ''
-				top 7px
+				top 6px
 				transform translateX(6px)
 				display inline-block
 				position absolute
@@ -171,19 +173,21 @@ a
 		font-size 1.2em
 		color #555
 		font-weight 100
+		margin-left 5px
 	&__slot
 		width 100%
 		box-sizing border-box
 		padding 120px 50px
 	&__title
-		margin 7px
+		font-family 'Maven Pro'
 		text-align left
 		font-size 1.3em
 		&:after
 			content ''
 			display block
-			width 43px
-			border-bottom 2px solid #222
+			margin-top 4px
+			width 53px
+			border-bottom 3px solid #222
 .portfolio
 	width 100%
 	background linear-gradient(to right, #05a9a6, #054780)
@@ -197,6 +201,7 @@ a
 		right 20px
 		top 200px
 	&__title
+		font-family 'Maven Pro'
 		margin 7px
 		text-align center
 		font-size 2em
@@ -236,6 +241,7 @@ a
 		min-height 82px
 		padding 18px
 	&__title
+		font-family 'Maven Pro'
 		color rgba(0, 0, 0, 0.8)
 		font-size 1.5em
 		font-weight 700
@@ -267,10 +273,11 @@ a
 	color #222
 	background-color white
 	box-sizing border-box
-	padding 145px 10px
+	padding 145px 10px 10px 10px
 	position relative
 	overflow hidden
 	&__title
+		font-family 'Maven Pro'
 		margin 7px
 		text-align center
 		font-size 2em
@@ -294,7 +301,7 @@ a
 		align-items center
 .offerBox
 	position relative
-	width 350px
+	width 390px
 	height 520px
 	padding 25px
 	text-align center
@@ -323,9 +330,10 @@ a
 		&--second
 			background-image url('../images/pattern2.png')
 	&__title
+		font-family 'Maven Pro'
 		margin 7px
 		text-align center
-		font-size 1.5em
+		font-size 2em
 		font-weight 700
 		z-index 2
 	&__description
@@ -346,6 +354,7 @@ a
 		text-align center
 		max-width 130px
 	&__button
+		font-family 'Maven Pro'
 		position absolute
 		padding 10px
 		font-size 1.3em
@@ -353,7 +362,7 @@ a
 		margin 0 auto
 		left 0
 		right 0
-		bottom 20px
+		bottom 30px
 		width 200px
 		background white
 		border 2px solid #057792
@@ -385,6 +394,19 @@ a
 	padding 350px 0 145px 0
 	position relative
 	overflow hidden
+	&__title
+		font-family 'Maven Pro'
+		margin 7px
+		text-align center
+		font-size 2em
+		font-weight 700
+		&:after
+			content ''
+			display block
+			margin 7px auto
+			width 320px
+			height 2px
+			background #fff
 	&__background
 		position absolute
 		left 0
@@ -426,6 +448,7 @@ a
 	textarea
 		min-height 300px
 	&__button
+		font-family 'Maven Pro'
 		padding 10px
 		font-size 1.3em
 		font-weight 900

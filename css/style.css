@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:900");
 body {
   margin: 0;
   font-family: 'Source Sans Pro';
@@ -168,13 +169,14 @@ a {
 }
 .heading__content h1 {
   font-weight: 900;
+  font-family: 'Maven Pro';
   font-size: 2em;
   position: relative;
   color: #fff;
 }
 .heading__content h1:after {
   content: '';
-  top: 7px;
+  top: 6px;
   transform: translateX(6px);
   display: inline-block;
   position: absolute;
@@ -197,6 +199,7 @@ a {
   font-size: 1.2em;
   color: #555;
   font-weight: 100;
+  margin-left: 5px;
 }
 .intro__slot {
   width: 100%;
@@ -204,15 +207,16 @@ a {
   padding: 120px 50px;
 }
 .intro__title {
-  margin: 7px;
+  font-family: 'Maven Pro';
   text-align: left;
   font-size: 1.3em;
 }
 .intro__title:after {
   content: '';
   display: block;
-  width: 43px;
-  border-bottom: 2px solid #222;
+  margin-top: 4px;
+  width: 53px;
+  border-bottom: 3px solid #222;
 }
 .portfolio {
   width: 100%;
@@ -229,6 +233,7 @@ a {
   top: 200px;
 }
 .portfolio__title {
+  font-family: 'Maven Pro';
   margin: 7px;
   text-align: center;
   font-size: 2em;
@@ -274,6 +279,7 @@ a {
   padding: 18px;
 }
 .project__title {
+  font-family: 'Maven Pro';
   color: rgba(0,0,0,0.8);
   font-size: 1.5em;
   font-weight: 700;
@@ -310,11 +316,12 @@ a {
   color: #222;
   background-color: #fff;
   box-sizing: border-box;
-  padding: 145px 10px;
+  padding: 145px 10px 10px 10px;
   position: relative;
   overflow: hidden;
 }
 .offer__title {
+  font-family: 'Maven Pro';
   margin: 7px;
   text-align: center;
   font-size: 2em;
@@ -342,7 +349,7 @@ a {
 }
 .offerBox {
   position: relative;
-  width: 350px;
+  width: 390px;
   height: 520px;
   padding: 25px;
   text-align: center;
@@ -376,9 +383,10 @@ a {
   background-image: url("../images/pattern2.png");
 }
 .offerBox__title {
+  font-family: 'Maven Pro';
   margin: 7px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 700;
   z-index: 2;
 }
@@ -402,6 +410,7 @@ a {
   max-width: 130px;
 }
 .offerBox__button {
+  font-family: 'Maven Pro';
   position: absolute;
   padding: 10px;
   font-size: 1.3em;
@@ -409,7 +418,7 @@ a {
   margin: 0 auto;
   left: 0;
   right: 0;
-  bottom: 20px;
+  bottom: 30px;
   width: 200px;
   background: #fff;
   border: 2px solid #057792;
@@ -445,6 +454,21 @@ a {
   padding: 350px 0 145px 0;
   position: relative;
   overflow: hidden;
+}
+.contact__title {
+  font-family: 'Maven Pro';
+  margin: 7px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+}
+.contact__title:after {
+  content: '';
+  display: block;
+  margin: 7px auto;
+  width: 320px;
+  height: 2px;
+  background: #fff;
 }
 .contact__background {
   position: absolute;
@@ -492,6 +516,7 @@ a {
   min-height: 300px;
 }
 .contact__button {
+  font-family: 'Maven Pro';
   padding: 10px;
   font-size: 1.3em;
   font-weight: 900;
