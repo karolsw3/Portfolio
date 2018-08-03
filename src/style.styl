@@ -91,10 +91,12 @@ a
 	overflow hidden
 	&__stack
 		position absolute
-		top 130px
-		left 188px
+		top 200px
+		left -100px
 		right 0
 		height 472px
+		z-index 3
+		width 340px
 	&__profile
 		position absolute
 		margin 0 auto
@@ -117,12 +119,7 @@ a
 		text-shadow 0 0 56px rgba(0, 0, 0, 0.6)
 		background inherit
 		overflow hidden
-		.heading__stack
-			left 129px
-			top -6px
-			filter blur(12px)
-			transition-duration 1s
-			z-index 2
+		max-width 700px
 		&:after
 			content ''
 			position absolute
@@ -137,7 +134,7 @@ a
 			filter blur(12px)
 			transition-duration 1s
 		&:hover
-			&:after , .heading__stack
+			&:after
 				filter blur(0px)
 	&__content
 		margin 0 auto

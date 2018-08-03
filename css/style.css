@@ -106,10 +106,12 @@ a {
 }
 .heading__stack {
   position: absolute;
-  top: 130px;
-  left: 188px;
+  top: 200px;
+  left: -100px;
   right: 0;
   height: 472px;
+  z-index: 3;
+  width: 340px;
 }
 .heading__profile {
   position: absolute;
@@ -134,13 +136,7 @@ a {
   text-shadow: 0 0 56px rgba(0,0,0,0.6);
   background: inherit;
   overflow: hidden;
-}
-.heading__about .heading__stack {
-  left: 129px;
-  top: -6px;
-  filter: blur(12px);
-  transition-duration: 1s;
-  z-index: 2;
+  max-width: 700px;
 }
 .heading__about:after {
   content: '';
@@ -156,8 +152,7 @@ a {
   filter: blur(12px);
   transition-duration: 1s;
 }
-.heading__about:hover:after,
-.heading__about:hover .heading__stack {
+.heading__about:hover:after {
   filter: blur(0px);
 }
 .heading__content {
