@@ -392,18 +392,6 @@ a {
   font-weight: 100;
   z-index: 2;
 }
-.offerBox__price {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 110px;
-  margin: 0 auto;
-  padding: 10px;
-  border: 2px solid #fff;
-  font-weight: 700;
-  text-align: center;
-  max-width: 130px;
-}
 .offerBox__button {
   font-family: 'Maven Pro';
   position: absolute;
