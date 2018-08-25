@@ -321,6 +321,7 @@ a {
   text-align: center;
   font-size: 2em;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 .offer__title:after {
   content: '';
@@ -362,20 +363,6 @@ a {
 }
 .offerBox:nth-child(2) {
   background: linear-gradient(to right, #834faf, #ff42e5);
-}
-.offerBox__background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-  background-image: url("../images/pattern.png");
-  background-size: 135px;
-  z-index: 1;
-}
-.offerBox__background--second {
-  background-image: url("../images/pattern2.png");
 }
 .offerBox__title {
   font-family: 'Maven Pro';
