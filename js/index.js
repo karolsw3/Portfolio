@@ -23,7 +23,6 @@ window.addEventListener('scroll', () => {
 })
 
 // Generate the portfolio projects list using the data below:
-
 var data = {
   projects: [
     {title: 'Sudoku', about: 'A modern, API-based sudoku web app', annotation: 'Node.js', url: 'https://github.com/Galactim/Sudoku'},
@@ -67,3 +66,19 @@ for (var i = 0; i < data.projects.length; i++) {
   project.appendChild(description)
   projects.appendChild(project)
 }
+
+// Smoothscroll
+Array.from(document.getElementsByClassName('smoothScroll')).forEach(
+    function (element) {
+      element.onclick = function () {
+        var targetId = element.getAttribute("href")
+        var target = document.getElementById(targetId)
+        var targetScroll = target.getBoundingClientRect().top
+        for (var i = 0; i < 100; i++) {
+          window.setTimeout(function () {
+            document.body.scrollTop += targetScroll / i
+          }, i * 5)
+        }
+      }
+    }
+);
