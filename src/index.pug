@@ -33,13 +33,6 @@ html
 				img(src='images/background2.svg')
 			.portfolio__title My portfolio
 			#projects.portfolio__projects
-				.project.revealOnScroll(v-for='(project, index) in projects' :class="{ 'project--primary': index < 3 }")
-					.project__desc
-						.project__photo(v-if='index < 3')
-							img(:src='project.image')
-						a.project__title(target='_blank' :href='project.url') {{project.title}}
-						.project__about {{project.about}}
-						.project__annotation {{project.annotation}}
 		section.offer
 			.offer__title Offer
 			.offer__offers
@@ -65,5 +58,4 @@ html
 				textarea.contact__input.revealOnScroll
 				button.contact__button.revealOnScroll Send
 		footer.footer Icons, background and the whole website made with ❤ by Karol Świerczek
-		script(src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js')
 		script(src='js/index.js')
