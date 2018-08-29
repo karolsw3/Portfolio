@@ -279,6 +279,7 @@ a
 		text-align center
 		font-size 2em
 		font-weight 700
+		margin-bottom 20px
 		&:after
 			content ''
 			display block
@@ -298,6 +299,8 @@ a
 		display flex
 		justify-content space-around
 		align-items center
+		max-width 1100px
+		margin 0 auto
 .offerBox
 	position relative
 	width 390px
@@ -365,7 +368,6 @@ a
 .contact
 	width 100%
 	color white
-	background linear-gradient(to left, #05a9a6, #054780)
 	box-sizing border-box
 	padding 115px 0
 	position relative
@@ -376,6 +378,7 @@ a
 		text-align center
 		font-size 2em
 		font-weight 700
+		z-index 3
 		&:after
 			content ''
 			display block
@@ -393,7 +396,7 @@ a
 		background-size cover
 		background-position top
 		background-position-x right
-		z-index 1
+		z-index -1
 	&__man
 		position absolute
 		left 10px
