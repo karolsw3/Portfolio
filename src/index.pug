@@ -12,7 +12,6 @@ html
 				.menu__button.smoothScroll(href='home') Home
 				.menu__button.smoothScroll(href='aboutMe') About me
 				.menu__button.smoothScroll(href='myPortfolio') My portfolio
-				.menu__button.smoothScroll(href='offer') Offer
 				.menu__button.smoothScroll(href='contact') Contact
 		section.heading#home
 			.heading__stack.float
@@ -33,29 +32,23 @@ html
 				img(src='images/background2.svg')
 			.portfolio__title My portfolio
 			#projects.portfolio__projects
-		section.offer#offer
-			.offer__title Offer
-			.offer__offers
-				.offerBox.revealOnScroll
-					.offerBox__title A one-page website
-					.offerBox__description 
-						p I have particular experience in creating one-page websites.
-						p I make a few design concepts and if my client accepts one of them - I'm coding it. My websites are worked out in the smallest detail. They're responsive, and I'm making them as beautiful as I can.
-					button.offerBox__button Order
-				.offerBox.revealOnScroll
-					.offerBox__title A web app
-					.offerBox__description 
-						p I can also design and code a simple web application.
-						p I can create the whole front-end of the app including its UX. My apps are made in Vue.js framework in Node.js environment.
-					button.offerBox__button.offerBox__button--second Order
 		section.contact#contact
-			.contact__title Contact
-			.contact__background
-			.contact__man
-			.contact__form
-				input.contact__input.revealOnScroll(placeholder='Your full name')
-				input.contact__input.revealOnScroll(placeholder='Title (eg. A cooking app)')
-				textarea.contact__input.revealOnScroll
-				button.contact__button.revealOnScroll Send
+			.contact__title Contact me
+			.contact__websites
+				a(href="https://www.facebook.com/karolswierczek2" target="_blank")
+					.contact__website
+						.contact__image
+							img(src="images/facebook.png")
+						.contact__websiteTitle Facebook
+				a(href="https://www.freelancer.com/u/karolsw2" target="_blank")
+					.contact__website
+						.contact__image
+							img(src="images/freelancer.jpg")
+						.contact__websiteTitle Freelancer.com
+				a(href="https://github.com/karolsw3" target="_blank")
+					.contact__website
+						.contact__image
+							img(src="images/github.png")
+						.contact__websiteTitle Github
 		footer.footer Icons, background and the whole website made with ❤ by Karol Świerczek
 		script(src='js/index.js')

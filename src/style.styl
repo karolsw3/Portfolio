@@ -265,99 +265,6 @@ a
 		font-style italic
 		font-size 0.92em
 		color rgba(0, 0, 0, .3)
-.offer
-	width 100%
-	color #222
-	background-color white
-	box-sizing border-box
-	padding 145px 10px
-	position relative
-	overflow hidden
-	&__title
-		font-family 'Maven Pro'
-		margin 7px
-		text-align center
-		font-size 2em
-		font-weight 700
-		margin-bottom 20px
-		&:after
-			content ''
-			display block
-			margin 7px auto
-			width 320px
-			height 2px
-			background #222
-	&__header
-		margin 45px auto 35px auto
-		padding 20px
-		max-width 350px
-		box-shadow 0 0 32px rgba(0, 0, 0, .2)
-		color #555
-	&__offers
-		max-width 1100px
-		margin 0 auto
-		display flex
-		justify-content space-around
-		align-items center
-		max-width 1100px
-		margin 0 auto
-.offerBox
-	position relative
-	width 390px
-	height 520px
-	padding 25px
-	text-align center
-	margin 15px auto
-	color white
-	box-shadow 0 0 32px rgba(0, 0, 0, .2)
-	text-shadow 0 0 32px rgba(0, 0, 0, .2)
-	display flex
-	flex-direction column
-	justify-content center
-	align-items center
-	&:nth-child(1)
-		background linear-gradient(to right, #05a9a6, #046681)
-	&:nth-child(2)
-		background linear-gradient(to right, #834faf, #ff42e5)
-	&__title
-		font-family 'Maven Pro'
-		margin 7px
-		text-align center
-		font-size 2em
-		font-weight 700
-		z-index 2
-	&__description
-		margin 7px
-		text-align center
-		font-size 1.1em
-		font-weight 100
-		z-index 2
-	&__button
-		font-family 'Maven Pro'
-		position absolute
-		padding 10px
-		font-size 1.3em
-		font-weight 900
-		margin 0 auto
-		left 0
-		right 0
-		bottom 30px
-		width 200px
-		background white
-		border 2px solid #057792
-		color #057792
-		transition-duration .2s
-		cursor pointer
-		text-align center
-		box-shadow 0 0 32px rgba(0, 0, 0, .2)
-		z-index 2
-		&--second
-			color #bd49c8
-			border-color #bd49c8
-		&:hover
-			background transparent
-			color white
-			border 2px solid white
 .footer
 	width 100%
 	box-sizing border-box
@@ -367,7 +274,7 @@ a
 	text-align center
 .contact
 	width 100%
-	color white
+	color #222
 	box-sizing border-box
 	padding 115px 0
 	position relative
@@ -385,72 +292,48 @@ a
 			margin 7px auto
 			width 320px
 			height 2px
-			background #fff
-	&__background
-		position absolute
-		left 0
-		top 0
+			background #222
+	&__websites
+		max-width 1300px
+		margin 40px auto
+		display grid
+		grid-template 1fr / 1fr 1fr 1fr
+		padding 15px
+		box-sizing border-box
+		grid-gap 60px
 		width 100%
-		height 100%
-		background-image url('../images/background3.svg')
-		background-size cover
-		background-position top
-		background-position-x right
-		z-index -1
-	&__man
-		position absolute
-		left 10px
-		bottom 10px
-		width 300px
-		height 217px
-		background-size contain
-		background-image url('../images/violet_man.svg')
-		z-index 3
-	&__form
-		margin 0 auto
+	&__website
+		position relative
 		display flex
-		flex-direction column
 		align-items center
 		justify-content space-between
-		z-index 2
-	&__input
-		width 90%
-		max-width 500px
-		border none
-		margin 10px
-		padding 15px 22px
-		background white
-		box-shadow 0 0 32px rgba(0, 0, 0, .2)
-		color #222
-		font-size 1.2em
-		text-align left
-		opacity .9
-		z-index 2
-	textarea
-		min-height 300px
-	&__button
-		font-family 'Maven Pro'
+		width 320px
+		height 42px
 		padding 10px
-		font-size 1.3em
-		font-weight 900
-		margin 10px auto
-		left 0
-		right 0
-		bottom 20px
-		width 200px
-		background white
-		border 2px solid #057792
-		color #057792
-		transition-duration .2s
+		margin 0 auto
+		box-shadow 0 0 2px #999
 		cursor pointer
-		text-align center
-		box-shadow 0 0 32px rgba(0, 0, 0, .2)
-		z-index 2
+		transition-duration 0.2s
 		&:hover
-			background transparent
-			color white
-			border 2px solid white
-@media screen and (max-width: 960px)
+			opacity 0.85
+	&__image
+		position relative
+		height 48px
+		width 48px
+		img
+			position absolute
+			width 100%
+			top 0
+			left 0
+			height 100%
+	&__websiteTitle
+		width 90%
+		text-align center
+		font-family 'Maven Pro'
+		color rgba(0, 0, 0, 0.8)
+		font-size 1.5em
+		font-weight 700
+@media screen and (max-width: 1160px)
 	.portfolio__projects
 		grid-template 1fr / 1fr 1fr
 	.menu
@@ -468,7 +351,7 @@ a
 	.project
 		padding 10px
 		width 305px
-	.portfolio__projects
+	.portfolio__projects, .contact__websites
 		grid-template 1fr / 1fr
 	.intro
 		grid-template 1fr / 1fr
@@ -481,9 +364,6 @@ a
 			font-size 1.8em
 			&:after
 				display none
-	.offer
-		&__offers
-			flex-direction column
 // Animations
 @keyframes rotate
 	from
